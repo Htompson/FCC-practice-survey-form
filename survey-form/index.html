@@ -1,0 +1,182 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- Comment -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  </head>
+  
+ <body>
+  <div class="container">
+    <header class="header">
+    <h1 id="title">Spa Services Survey</h1>
+      <p id="description">We love having you! Please let us know how we can serve you better.</p>
+    </header>
+    
+    <form id="survey-form">
+    <div class="form-areas">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="First and last name"
+        required
+      />
+    </div>
+      
+    <div class="form-areas">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Email"
+        required/>
+    
+    </div>
+    <div class="form-areas">
+      <label id="number-label" for="number"
+             >Age<span> <i>*optional</i></span></label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="18"
+        max="99"
+        placeholder="Age"/>
+    </div>
+
+    <div class="form-areas">
+      <p>How did you find our services?</p>
+      <select id="dropdown" name="role" required>
+        <option disabled selected value>
+          Select rating</option>
+        <option value="facebook">Facebook</option>
+        <option value="twitter">Twitter</option>
+        <option value="friend">Friend</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+      
+    <div class="form-areas">
+      <p>Would you like to book your next service with us?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="yes"
+          type="radio"
+          class="input-radio"
+          checked
+        />Yes</label>
+     
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label>
+
+      <label
+        ><input
+          name="user-recommend"
+          value="no"
+          type="radio"
+          class="input-radio"
+        />No</label>
+    </div>
+
+    <div class="form-areas">
+      <p>
+        Which of our service(s) have you enjoyed the most?
+      </p>
+      <select id="most-like" name="mostLike"  required>
+        <option disabled selected value>Select one</option>
+        <option value="massage">Massage</option>
+        <option value="manicure">Mani</option>
+        <option value="facial">Facial</option>
+        <option value="laser">Laser</option>
+      </select>
+    </div>
+
+  <div class="form-areas">
+      <p>
+        What would you like to see improved?
+        <span class="clue">(You can select multiple options)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="appointment"
+          type="checkbox"
+          class="input-checkbox"
+        />Appointment Times</label>
+      
+    <label>
+        <input
+          name="prefer"
+          value="services"
+          type="checkbox"
+          class="input-checkbox"
+        />Services Offered</label>
+      
+    <label
+        ><input
+          name="prefer"
+          value="refreshments"
+          type="checkbox"
+          class="input-checkbox"
+        />Refreshments</label>
+      
+    <label
+        ><input
+          name="prefer"
+          value="cleanliness"
+          type="checkbox"
+          class="input-checkbox"
+        />Cleanliness</label>
+     
+    <label
+        ><input
+          name="prefer"
+          value="entertainment"
+          type="checkbox"
+          class="input-checkbox"
+        />Entertainment</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="waxing"
+          type="checkbox"
+          class="input-checkbox"
+             />Waxing</label>
+    </div>
+      
+    <div class="form-areas">
+      <p>Additional Comments</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter here...">
+      </textarea>
+    </div>
+      
+    <div class="form-areas">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div> 
+      
+  </form>
+ </div>
+</body>
+  
+</html>
